@@ -3,6 +3,7 @@ How many features do you need to detect a face in a crowd?
 
 Detecting Faces in Images by Boosting Technique
  
+ 
 Objectives : 
 
 Boosting is a general method for improving the accuracy of any given learning algorithm. One can use it to combine simple or weak classifiers, each performing only slightly better than random guess,  to form a strong classifier. One successful example of the Boosting techniques was Face detection. In this project, you are required to implement the Adaboost and RealBoost algorithms for  frontal human face detection. Cascade is not required. 
@@ -30,15 +31,20 @@ Boosting is a general method for improving the accuracy of any given learning al
    (v)  Plot the three ROC curves and comparing them against the histograms and  ROC's in 2.2.
 
 
+
 Datasets:
 
 The dataset includes a total of 11,800 frontal faces in two sizes: 16x16 pixels and 24x24 pixels, and 45,000 non-faces which are also in two sizes. These non-faces are collected through a "negative mining" procedure: running the detection code on "background" images without faces and adding false alarms (hard examples) to the non-face set.
    
 We will use a background image from our classroom when it has no people for what people called  Hard Negative Mining. Thus you can run your strong classifier on these images, and add any false detection as negative images in the later training stage.
 
+
+
 Test images:
      
 An image taken at the class is used for testing, not for training. Note that  you need to rescale the image to multiple sizes so that the largest and smallest faces appear as 24x24 pixels or 16x16 pixels in the pyramid at least once. Or you keep multiple sizes, and run your detection on all these images, and apply a Non-Maximum Suppression (remove detected positive windows that overlaps heavily).
+
+
 
 References:
 
